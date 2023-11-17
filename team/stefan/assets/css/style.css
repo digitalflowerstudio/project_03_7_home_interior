@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "AlegreyaSC-Regular";
+    src: url(../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: "NixieOne-Regular";
+    src: url(../fonts/Nixie_One/NixieOne-Regular.ttf);
+}
+
+:root {
+    --first-color: #FFF;
+    --second-color: #3A4F52;
+    --third-color: #6A6A6A;
+    --box-image-color-portfolio: rgba(2, 56, 58, 0.70);
+    --box-color-our-services: rgba(0, 0, 0, 0.20);
+
+
+    --first-font: "AlegreyaSC-Regular";
+    --second-font: "NixieOne-Regular";
+    --third-font: "Poppins";
+    /* stat Helvetica Neue nutzen wir Poppins */
+}
+
+
+
+
+
+
+
+
+
+/* our lates works
+color: #3A4F52;
+font-family: Alegreya Sans;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 39.6px; 110% */
+
+
+
+/* 
+take a loook
+color: #6A6A6A;
+font-family: Helvetica Neue;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 142.857% */
