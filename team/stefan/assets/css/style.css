@@ -1,22 +1,47 @@
 @font-face {
     font-family: "Poppins";
-    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
 }
 
 @font-face {
     font-family: "AlegreyaSC-Regular";
-    src: url(../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf);
+    src: url("../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf");
 }
 
 @font-face {
     font-family: "NixieOne-Regular";
-    src: url(../fonts/Nixie_One/NixieOne-Regular.ttf);
+    src: url("../fonts/Nixie_One/NixieOne-Regular.ttf");
 }
+
+@font-face {
+    font-family: "Alegreya-Sans";
+    src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf");
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* ich habe die 4. font hizugefügt */
+/* div in h2 modificat */
+/* 2ore 30 */
+
+
+
+
 
 :root {
     --first-color: #FFF;
     --second-color: #3A4F52;
     --third-color: #6A6A6A;
+    --color-4: rgb(240, 240, 240);
     --box-image-color-portfolio: rgba(2, 56, 58, 0.70);
     --box-color-our-services: rgba(0, 0, 0, 0.20);
 
@@ -24,7 +49,30 @@
     --first-font: "AlegreyaSC-Regular";
     --second-font: "NixieOne-Regular";
     --third-font: "Poppins";
+    --forth-font: "Alegreya-Sans";
     /* stat Helvetica Neue nutzen wir Poppins */
+}
+
+
+
+
+/* gloabale einstelungen */
+
+h2 {
+    color: var(--second-color);
+    font-family: var(--forth-font);
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 110%
+}
+
+p {
+    color: var(--third-color);
+    font-family: var(--third-font);
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.857%
 }
 
 
@@ -32,6 +80,311 @@
 
 
 
+
+/* start header */
+
+
+header {
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header nav .logo p {
+    padding: 1.5rem 2rem;
+    color: var(--first-color);
+    text-align: left;
+    font-family: var(--first-font);
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+
+header .herotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.10rem;
+    margin-top: 4rem;
+
+}
+
+
+
+header .herotext h1 {
+    color: var(--first-color);
+    text-align: center;
+    font-family: var(--second-font);
+    font-size: 2.45rem;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+
+header .herotext p {
+    color: rgba(255, 255, 255, 0.50);
+    text-align: center;
+    font-family: var(--first-font);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 100%
+}
+
+
+
+
+main .portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: var(--color-4);
+}
+
+main .portfolio-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 1rem;
+    align-items: center;
+}
+
+
+
+main .portfolio .portfolio-header .portfolio-header-button button {
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem;
+    width: 6rem;
+
+}
+
+main .portfolio .portfolio-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+main .portfolio .portfolio-projects .project1 {
+    background-image: url(../img/portfolio1.png);
+    background-size: cover;
+    background-color: 0px -155.736px / 100% 250.994% no-repeat, #C3C9CC;
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 216px;
+
+}
+
+main .portfolio .portfolio-projects .project2 {
+    background-image: url(../img/portfolio2.png);
+    background-size: cover;
+    background-color: 0px -155.736px / 100% 250.994% no-repeat, #C3C9CC;
+    background-repeat: no-repeat;
+    width: 360px;
+    height: 216px;
+}
+
+main .portfolio .portfolio-projects .project3 {
+    background-image: url(../img/portfolio3.png);
+    background-size: cover;
+    background-color: 0px -155.736px / 100% 250.994% no-repeat, #C3C9CC;
+    width: 360px;
+    height: 216px;
+}
+
+main .portfolio .portfolio-projects .project4 {
+    background-image: url(../img/portfolio4.png);
+    background-size: cover;
+    background-color: 0px -155.736px / 100% 250.994% no-repeat, #C3C9CC;
+    width: 360px;
+    height: 216px;
+}
+
+main .portfolio .portfolio-projects .project5 {
+    background-image: url(../img/portfolio5.png);
+    background-size: cover;
+    background-color: 0px -155.736px / 100% 250.994% no-repeat, #C3C9CC;
+    width: 360px;
+    height: 216px;
+}
+
+main .portfolio .portfolio-projects .project6 {
+    background-image: url(../img/portfolio6.png);
+    background-size: cover;
+    background-color: 0px -155.736px / 100% 250.994% no-repeat, #C3C9CC;
+    width: 360px;
+    height: 216px;
+    background-color: var(--box-image-color-portfolio);
+
+}
+
+
+main .portfolio .portfolio-projects a {
+    color: var(--first-color);
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 1rem;
+
+}
+
+
+
+/* ------------contact */
+
+main .contact {
+    background-image: url(../img/contact.png);
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+main .contact .contact-wrapper {
+    display: flex;
+    background-color: var(--box-color-our-services);
+    margin: 3rem 0;
+    width: 95vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .contact .contact-wrapper h2 {
+    color: var(--first-color);
+    padding: 0.5rem;
+}
+
+main .contact .contact-wrapper p {
+    color: var(--first-color);
+    font-size: 0.9rem;
+    padding: 0.5rem;
+
+}
+
+main .contact .contact-wrapper .contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    width: 90vw;
+
+}
+
+/* main .contact .contact-wrapper .contact-form form input {
+    color: var(--first-color);
+    background-color: none;
+    border: 1px solid var(--first-color);
+    padding: 0.5rem;
+} */
+
+main .contact .contact-wrapper .contact-form form textarea,
+input {
+    color: var(--first-color);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--first-color);
+    padding: 0.5rem;
+    font-family: var(--third-font);
+}
+
+main .contact .contact-wrapper .contact-form form input[type="text"]::placeholder {
+    color: var(--first-color);
+}
+
+main .contact .contact-wrapper .contact-form form input[type="email"]::placeholder {
+    color: var(--first-color);
+}
+
+main .contact .contact-wrapper .contact-form form input[type="submit"] {
+    width: 5rem;
+    align-self: center;
+}
+
+
+
+
+
+/* ------------footer */
+
+footer {
+    background-color: #2B3E51;
+    height: 30vh;
+    width: 100vw;
+
+}
+
+footer p {
+    color: var(--first-color);
+    width: 50vw;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* -----------------CSS__mobile_Start------------- */
+
+@media screen {
+    @media only screen and (min-width: 600px) {
+        header {
+
+            height: 80vh;
+        }
+    }
+}
+
+/* -----------------CSS__mobile__end------------- */
+
+
+
+
+
+/* -----------------CSS__IPAD__Start------------- */
+
+@media screen {
+    @media only screen and (min-width: 768px) {
+        header {
+
+            height: 90vh;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+/* -----------------CSS__mobile__end------------- */
+
+@media screen {
+    @media only screen and (min-width: 1024px) {
+        header {
+
+            height: 90vh;
+        }
+    }
+}
 
 
 
