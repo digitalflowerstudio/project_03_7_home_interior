@@ -242,6 +242,206 @@ main .portfolio .portfolio-projects a {
 
 }
 
+/* ------------our services */
+
+
+.services {
+    background-image: url(../img/services.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--box-color-our-services);
+    height: 90vh;
+    width: 94vw;
+
+
+}
+
+
+
+
+.service-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+.service-content h2 {
+    color: var(--first-color);
+    padding: 0.5rem;
+}
+
+.service-content p {
+    color: var(--first-color);
+    font-size: 0.9rem;
+    padding: 0.5rem;
+
+}
+
+
+
+.service-details img {
+    width: 3rem;
+}
+
+
+
+
+
+
+/* ------------blog */
+
+
+
+main .blog {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main .blog .blog-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 1rem;
+    align-items: center;
+
+}
+
+
+main .blog .blog-header .blog-header-text {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+main .blog .blog-header .blog-header-button button {
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem;
+    width: 6rem;
+    align-items: center;
+
+}
+
+
+/* ------------quote */
+
+
+
+
+main .quote {
+    height: 100vh;
+    background-image: url(../img/quote.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main .quote .quote-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: var(--box-color-our-services);
+    margin: 3rem 0;
+    width: 96vw;
+    height: 80vh;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+main .quote .quote-wrapper p {
+    color: var(--first-color);
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+main .quote .quote-wrapper a {
+    color: var(--first-color);
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 1rem;
+
+}
+
+
+/* ------------testimonials */
+
+
+
+main .testimonials {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-4);
+    height: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+
+main .testimonials .testimonials-header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 1rem;
+    align-items: center;
+}
+
+main .testimonials .testimonials-header p {
+    color: var(--third-color);
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+main .testimonials .testimonial-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    padding: 1rem;
+    align-items: center;
+}
+
+main .testimonials .testimonial-detail p {
+    color: var(--third-color);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+main .testimonials .testimonial-detail .testimonial-description {
+    padding: 0.4rem;
+}
+
+main .testimonials .testimonial-detail .testimonial-image {
+    padding-top: 0.4rem;
+}
+
+main .testimonials .testimonial-detail .testimonial-name {
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
 
 
 /* ------------contact */
@@ -287,12 +487,6 @@ main .contact .contact-wrapper .contact-form form {
 
 }
 
-/* main .contact .contact-wrapper .contact-form form input {
-    color: var(--first-color);
-    background-color: none;
-    border: 1px solid var(--first-color);
-    padding: 0.5rem;
-} */
 
 main .contact .contact-wrapper .contact-form form textarea,
 input {
@@ -315,7 +509,6 @@ main .contact .contact-wrapper .contact-form form input[type="submit"] {
     width: 5rem;
     align-self: center;
 }
-
 
 
 
@@ -366,9 +559,38 @@ footer p {
             height: 90vh;
         }
 
+
+        main .quote .quote-wrapper {
+
+            margin: 3rem 0;
+            width: 80vw;
+            height: 40vh;
+
+        }
+
+
+
+        main .testimonials {
+            padding-top: 2rem;
+        }
+
+        main .testimonials .testimonial-detail {
+
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 4rem;
+
+        }
+
+        main .testimonials .testimonials-content {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 2rem;
+
+        }
+
     }
 }
-
 
 
 
